@@ -16,6 +16,27 @@
 </head>
 
 <body>
+  <script>
+    var mpipp_wi = {
+      userId: 12108,
+      siteId: 101436,
+      widgetId: 103229,
+      widgetType: 1
+    };
+    if (void 0 === mpipp_ref) var mpipp_ref = [mpipp_wi];
+    else mpipp_ref.push(mpipp_wi);
+    var mpipp_sid = document.getElementById('monadplugscriptipp');
+    if (!mpipp_sid) {
+      var mpipp_dt = new Date,
+        mpipp_ns = document.createElement('script');
+      mpipp_ns.id = 'monadplugscriptipp', mpipp_ns.type = 'text/javascript', mpipp_ns.defer = !0, mpipp_ns.src =
+        '//cdn.monadplug.com/format/in-page-push/js/hood.js?v=' + mpipp_dt.getYear() + mpipp_dt.getMonth() + mpipp_dt
+        .getUTCDate() + mpipp_dt.getUTCHours();
+      var pmipp_os = document.getElementsByTagName('script')[0];
+      pmipp_os.parentNode.insertBefore(mpipp_ns, pmipp_os)
+    }
+  </script>
+  <div id='12108-101436-103229'></div>
   <!-- Hero section -->
   <section id="hero" class="text-white tm-font-big tm-parallax">
     <!-- Navigation -->
@@ -215,7 +236,7 @@
           </p>
         </div>
 
-        
+
 
       </div>
     </div>
